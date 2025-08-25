@@ -58,23 +58,14 @@ title-color: "#FFFFFF"
 # Terminal settings
 terminal-font: "fonts/Roboto-Regular-26"
 
-# Subtle background for quote readability
-+ image {
-    left = 69%
-    top = 43%
-    width = 27%
-    height = 24%
-    file = "quote_bg.png"
-}
-
-# Inspirational quote on the right side - Stylish design element with larger black text
+# Inspirational quote on the right side - Stylish design element with larger black text (no background)
 + label {
     left = 70%
-    top = 45%
+    top = 50%
     width = 25%
     height = 20%
     text = "Alone at the edge of the universe humming a tune..."
-    font = "fonts/LiberationSerif-Regular-40"
+    font = "fonts/LiberationSerif-Regular-48"
     color = "#000000"
     align = "center"
 }
