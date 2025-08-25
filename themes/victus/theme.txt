@@ -18,14 +18,14 @@ title-color: "#FFFFFF"
     height = 28%
     
     item_font = "fonts/Roboto-Regular-22"
-    item_color = "#E0E0E0"
+    item_color = "#B0B0B0"
     item_spacing = 6
     item_height = 36
     item_padding = 12
     item_icon_space = 28
     
     selected_item_font = "fonts/Roboto-Regular-22"
-    selected_item_color = "#FFFFFF"
+    selected_item_color = "#F0F0F0"
     selected_item_pixmap_style = "highlight_*.png"
     
     # Menu box appearance
@@ -48,10 +48,10 @@ title-color: "#FFFFFF"
     width = 40%
     height = 18
     font = "fonts/Roboto-Regular-22"
-    text_color = "#E0E0E0"
-    fg_color = "#3498DB"
-    bg_color = "#2C3E50"
-    border_color = "#5D6D7E"
+    text_color = "#B0B0B0"
+    fg_color = "#808080"
+    bg_color = "#40404080"
+    border_color = "#606060"
     text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 

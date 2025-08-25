@@ -8,16 +8,17 @@ A minimalistic, premium GRUB theme inspired by HP Victus branding featuring ultr
 
 ![HP Victus GRUB Theme in Action](grub_theme_preview.png)
 
-*The sleek HP Victus GRUB theme featuring centered menu layout, modern color scheme, and enhanced spacing for optimal readability.*
+*The sleek HP Victus GRUB theme featuring centered menu layout, atmospheric smokey background, and transparent gray color scheme optimized for enhanced readability.*
 
 ## Features
 
-- **Ultra-Sleek Design**: Refined minimalistic interface with optimized layout positioning
+- **Ultra-Sleek Design**: Refined minimalistic interface with transparent gray overlays
 - **Enhanced Visual Hierarchy**: Centered menu (30%/55% position) for perfect balance  
-- **Modern Color Palette**: Sophisticated blue (#3498DB) with improved contrast (#E0E0E0 text)
+- **Atmospheric Background**: Smokey skyscraper scene with Victus branding optimized for transparency
+- **Modern Color Palette**: Sophisticated gray tones (#B0B0B0) designed for atmospheric backgrounds
 - **Premium Typography**: Roboto font family with increased spacing for superior readability
 - **Extended OS Support**: Icons for Linux, Windows, Recovery, Arch Linux, and Endeavour OS
-- **Optimized Layout**: Menu repositioned with 40% width and enhanced padding for sleeker appearance
+- **Optimized Layout**: Menu repositioned with 40% width and semi-transparent overlays
 - **Enhanced Accessibility**: High contrast colors and improved spacing for excellent readability
 - **Comprehensive Testing**: Built-in validation script ensures theme integrity
 

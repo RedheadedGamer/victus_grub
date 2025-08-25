@@ -3,27 +3,28 @@
 ## Theme Features Overview
 
 ### Visual Design
-- **Background**: Elegant misty forest scene with sophisticated, calming aesthetics
+- **Background**: Atmospheric smokey skyscraper scene with sophisticated urban aesthetics and Victus branding
 - **Layout**: Ultra-sleek menu positioned at 55% vertical height with 30% left margin for perfect balance
 - **Typography**: Premium Roboto font family (Regular 22px for menu, Bold 24px for titles)
-- **Color Scheme**: Modern dark theme with enhanced blue (#3498DB) highlights and improved contrast
+- **Color Scheme**: Modern transparent gray theme optimized for smokey backgrounds with enhanced contrast
 
 ### Enhanced Menu Appearance
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    Sophisticated Background             │
+│                Smokey Skyscraper Background             │
+│                     with Victus Branding               │
 │                                                         │
-│                    [HP VICTUS BRANDING]                 │
+│                    [HP VICTUS LOGO]                     │
 │                                                         │
 │                                                         │
 │              ┌─────────────────────────┐                │
 │              │  ○ Ubuntu               │                │ 55% height  
 │              │  ▶ Ubuntu (Advanced)    │                │ (optimized)
-│              │  ⊞ Windows Boot Manager │                │
-│              │  ⚠ System Recovery      │                │
+│              │  ⊞ Windows Boot Manager │                │ Semi-transparent
+│              │  ⚠ System Recovery      │                │ gray overlay
 │              └─────────────────────────┘                │
 │                                                         │
-│              ██████████████████                         │ Enhanced progress
+│              ████████████░░░░░░                         │ Gray progress
 │              Use ↑ and ↓ to change selection           │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -32,13 +33,13 @@
 
 | Element | Color Code | Description |
 |---------|------------|-------------|
-| Normal Text | `#E0E0E0` | Enhanced light silver for superior readability |
-| Selected Text | `#FFFFFF` | Pure white for highlighted selection |
-| Highlight Background | `#3498DB` | Modern enhanced blue for sleek appearance |
-| Title Text | `#FFFFFF` | White for title/header text |
-| Progress Bar | `#3498DB` | Enhanced blue progress indicator |
-| Progress Background | `#2C3E50` | Dark slate for refined contrast |
-| Background | `#000000` | Black fallback background |
+| Normal Text | `#B0B0B0` | Smokey light gray perfectly suited for atmospheric backgrounds |
+| Selected Text | `#F0F0F0` | Nearly white for highlighted selection with subtle gray tone |
+| Highlight Background | Semi-transparent gray | Translucent overlay that blends with smokey backgrounds |
+| Title Text | `#FFFFFF` | Pure white for title/header text |
+| Progress Bar | `#808080` | Medium gray progress indicator |
+| Progress Background | `#40404080` | Semi-transparent dark gray with opacity |
+| Background | Smokey skyscraper scene | Atmospheric urban landscape with Victus branding |
 
 ### Icon System
 
