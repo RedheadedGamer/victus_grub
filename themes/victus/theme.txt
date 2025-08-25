@@ -64,12 +64,9 @@ terminal-font: "fonts/Roboto-Regular-26"
     top = 45%
     width = 25%
     height = 20%
-    text = "The future belongs to those
-who believe in the beauty
-of their dreams.
-— Eleanor Roosevelt"
-    font = "fonts/Roboto-Bold-24"
-    color = "#E0E0E0"
+    text = "Alone at the edge of the universe humming a tune..."
+    font = "fonts/LiberationSerif-Regular-32"
+    color = "#FFFFFF"
     align = "center"
 }
 
