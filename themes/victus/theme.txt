@@ -10,21 +10,21 @@ title-text: ""
 title-font: "fonts/Roboto-Bold-24"
 title-color: "#FFFFFF"
 
-# Boot menu settings - Positioned to avoid Victus branding with enhanced readability
+# Boot menu settings - Compact menu positioned to avoid Victus branding
 + boot_menu {
     left = 5%
     top = 40%
-    width = 35%
-    height = 35%
+    width = 25%
+    height = 25%
     
-    item_font = "fonts/Roboto-Regular-22"
+    item_font = "fonts/Roboto-Regular-26"
     item_color = "#FFFFFF"
-    item_spacing = 6
-    item_height = 36
-    item_padding = 12
-    item_icon_space = 28
+    item_spacing = 8
+    item_height = 42
+    item_padding = 15
+    item_icon_space = 32
     
-    selected_item_font = "fonts/Roboto-Regular-22"
+    selected_item_font = "fonts/Roboto-Regular-26"
     selected_item_color = "#FFFFFF"
     selected_item_pixmap_style = "highlight_*.png"
     
@@ -45,9 +45,9 @@ title-color: "#FFFFFF"
     id = "__timeout__"
     left = 5%
     top = 80%
-    width = 35%
+    width = 25%
     height = 18
-    font = "fonts/Roboto-Regular-22"
+    font = "fonts/Roboto-Regular-26"
     text_color = "#FFFFFF"
     fg_color = "#C0C0C0"
     bg_color = "#202020C0"
@@ -56,7 +56,22 @@ title-color: "#FFFFFF"
 }
 
 # Terminal settings
-terminal-font: "fonts/Roboto-Regular-22"
+terminal-font: "fonts/Roboto-Regular-26"
+
+# Inspirational quote on the right side - Stylish design element
++ label {
+    left = 70%
+    top = 45%
+    width = 25%
+    height = 20%
+    text = "The future belongs to those
+who believe in the beauty
+of their dreams.
+— Eleanor Roosevelt"
+    font = "fonts/Roboto-Bold-24"
+    color = "#E0E0E0"
+    align = "center"
+}
 
 # OS Class icon mapping
 + icon {
