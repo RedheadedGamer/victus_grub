@@ -1,0 +1,85 @@
+# HP Victus GRUB Theme
+# Minimalistic, premium design with sleek modern colors
+
+# Desktop background
+desktop-image: "background.png"
+desktop-color: "#000000"
+
+# Title settings (top of screen)
+title-text: ""
+title-font: "fonts/Roboto-Bold-24"
+title-color: "#FFFFFF"
+
+# Boot menu settings
++ boot_menu {
+    left = 25%
+    top = 58%
+    width = 50%
+    height = 25%
+    
+    item_font = "fonts/Roboto-Regular-22"
+    item_color = "#CCCCCC"
+    item_spacing = 4
+    item_height = 32
+    item_padding = 8
+    item_icon_space = 24
+    
+    selected_item_font = "fonts/Roboto-Regular-22"
+    selected_item_color = "#FFFFFF"
+    selected_item_pixmap_style = "highlight_*.png"
+    
+    # Menu box appearance
+    scrollbar = false
+    
+    # Icon mapping for different OS types
+    + icon {
+        left = 2
+        top = 4
+        width = 24
+        height = 24
+    }
+}
+
+# Highlight style for selected items
++ progress_bar {
+    id = "__timeout__"
+    left = 25%
+    top = 88%
+    width = 50%
+    height = 16
+    font = "fonts/Roboto-Regular-22"
+    text_color = "#CCCCCC"
+    fg_color = "#2980B9"
+    bg_color = "#333333"
+    border_color = "#666666"
+    text = "@TIMEOUT_NOTIFICATION_LONG@"
+}
+
+# Terminal settings
+terminal-font: "fonts/Roboto-Regular-22"
+
+# OS Class icon mapping
++ icon {
+    class = "linux"
+    image = "icons/linux.png"
+}
+
++ icon {
+    class = "windows"
+    image = "icons/windows.png"
+}
+
++ icon {
+    class = "recovery"
+    image = "icons/recovery.png"
+}
+
++ icon {
+    class = "arch"
+    image = "icons/arch.png"
+}
+
++ icon {
+    class = "endeavouros"
+    image = "icons/endeavouros.png"
+}
