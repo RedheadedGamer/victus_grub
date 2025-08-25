@@ -8,18 +8,18 @@ A minimalistic, premium GRUB theme inspired by HP Victus branding featuring ultr
 
 ![HP Victus GRUB Theme in Action](grub_theme_preview.png)
 
-*The sleek HP Victus GRUB theme featuring centered menu layout, atmospheric smokey background, and transparent gray color scheme optimized for enhanced readability.*
+*The enhanced HP Victus GRUB theme featuring left-positioned menu layout, atmospheric smokey skyscraper background, dark semi-transparent overlays, and white text optimized for maximum readability.*
 
 ## Features
 
-- **Ultra-Sleek Design**: Refined minimalistic interface with transparent gray overlays
-- **Enhanced Visual Hierarchy**: Centered menu (30%/55% position) for perfect balance  
-- **Atmospheric Background**: Smokey skyscraper scene with Victus branding optimized for transparency
-- **Modern Color Palette**: Sophisticated gray tones (#B0B0B0) designed for atmospheric backgrounds
-- **Premium Typography**: Roboto font family with increased spacing for superior readability
+- **Ultra-Sleek Design**: Refined minimalistic interface with dark semi-transparent overlays
+- **Enhanced Readability**: Left-positioned menu (5%/40% position) avoids overlapping Victus branding
+- **Atmospheric Background**: Smokey skyscraper scene with Victus branding optimized for menu placement
+- **High Contrast Colors**: White text (#FFFFFF) on dark overlays for maximum readability
+- **Premium Typography**: Roboto font family with enhanced contrast for superior visibility
 - **Extended OS Support**: Icons for Linux, Windows, Recovery, Arch Linux, and Endeavour OS
-- **Optimized Layout**: Menu repositioned with 40% width and semi-transparent overlays
-- **Enhanced Accessibility**: High contrast colors and improved spacing for excellent readability
+- **Smart Layout**: Menu repositioned with 35% width and dark overlays (#202020C0) for excellent contrast
+- **Enhanced Accessibility**: High contrast white text and reduced transparency for optimal readability
 - **Comprehensive Testing**: Built-in validation script ensures theme integrity
 
 ## Installation
@@ -173,9 +173,9 @@ Edit `themes/victus/theme.txt` and modify color values:
 
 ### Adjusting Layout
 Modify position and size values in `theme.txt` (current optimized values):
-- **Menu Position**: `left = 30%`, `top = 55%` (centered for optimal balance)
-- **Menu Size**: `width = 40%`, `height = 28%` (sleek proportions)
-- **Progress Bar**: `left = 30%`, `top = 86%`, `width = 40%` (aligned with menu)
+- **Menu Position**: `left = 5%`, `top = 40%` (left-positioned to avoid Victus branding)
+- **Menu Size**: `width = 35%`, `height = 35%` (optimized proportions)
+- **Progress Bar**: `left = 5%`, `top = 80%`, `width = 35%` (aligned with menu)
 - **Enhanced Spacing**: `item_spacing = 6`, `item_padding = 12` (improved readability)
 
 ### Background Image

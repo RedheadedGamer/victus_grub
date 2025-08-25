@@ -10,25 +10,25 @@ title-text: ""
 title-font: "fonts/Roboto-Bold-24"
 title-color: "#FFFFFF"
 
-# Boot menu settings - Optimized for sleek appearance
+# Boot menu settings - Positioned to avoid Victus branding with enhanced readability
 + boot_menu {
-    left = 30%
-    top = 55%
-    width = 40%
-    height = 28%
+    left = 5%
+    top = 40%
+    width = 35%
+    height = 35%
     
     item_font = "fonts/Roboto-Regular-22"
-    item_color = "#B0B0B0"
+    item_color = "#FFFFFF"
     item_spacing = 6
     item_height = 36
     item_padding = 12
     item_icon_space = 28
     
     selected_item_font = "fonts/Roboto-Regular-22"
-    selected_item_color = "#F0F0F0"
+    selected_item_color = "#FFFFFF"
     selected_item_pixmap_style = "highlight_*.png"
     
-    # Menu box appearance
+    # Menu box appearance with dark overlay for readability
     scrollbar = false
     
     # Icon mapping for different OS types - Optimized positioning
@@ -40,18 +40,18 @@ title-color: "#FFFFFF"
     }
 }
 
-# Progress bar for timeout - Sleek modern styling
+# Progress bar for timeout - Enhanced contrast and readability
 + progress_bar {
     id = "__timeout__"
-    left = 30%
-    top = 86%
-    width = 40%
+    left = 5%
+    top = 80%
+    width = 35%
     height = 18
     font = "fonts/Roboto-Regular-22"
-    text_color = "#B0B0B0"
-    fg_color = "#808080"
-    bg_color = "#40404080"
-    border_color = "#606060"
+    text_color = "#FFFFFF"
+    fg_color = "#C0C0C0"
+    bg_color = "#202020C0"
+    border_color = "#808080"
     text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 
