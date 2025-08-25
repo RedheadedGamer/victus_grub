@@ -10,7 +10,7 @@ title-text: ""
 title-font: "fonts/Roboto-Bold-24"
 title-color: "#FFFFFF"
 
-# Boot menu settings - Compact menu positioned to avoid Victus branding
+# Boot menu settings - Compact menu positioned to avoid Victus branding with rounded corners
 + boot_menu {
     left = 5%
     top = 40%
@@ -19,22 +19,22 @@ title-color: "#FFFFFF"
     
     item_font = "fonts/Roboto-Regular-26"
     item_color = "#FFFFFF"
-    item_spacing = 8
-    item_height = 42
-    item_padding = 15
+    item_spacing = 10
+    item_height = 44
+    item_padding = 16
     item_icon_space = 32
     
     selected_item_font = "fonts/Roboto-Regular-26"
     selected_item_color = "#FFFFFF"
     selected_item_pixmap_style = "highlight_*.png"
     
-    # Menu box appearance with dark overlay for readability
+    # Menu box appearance with rounded corners for modern look
     scrollbar = false
     
     # Icon mapping for different OS types - Optimized positioning
     + icon {
         left = 4
-        top = 6
+        top = 8
         width = 24
         height = 24
     }
@@ -58,15 +58,24 @@ title-color: "#FFFFFF"
 # Terminal settings
 terminal-font: "fonts/Roboto-Regular-26"
 
-# Inspirational quote on the right side - Stylish design element
+# Subtle background for quote readability
++ image {
+    left = 69%
+    top = 43%
+    width = 27%
+    height = 24%
+    file = "quote_bg.png"
+}
+
+# Inspirational quote on the right side - Stylish design element with larger black text
 + label {
     left = 70%
     top = 45%
     width = 25%
     height = 20%
     text = "Alone at the edge of the universe humming a tune..."
-    font = "fonts/LiberationSerif-Regular-32"
-    color = "#FFFFFF"
+    font = "fonts/LiberationSerif-Regular-40"
+    color = "#000000"
     align = "center"
 }
 
