@@ -1,17 +1,18 @@
 # HP Victus GRUB Theme
 
-A minimalistic, premium GRUB theme inspired by HP Victus branding featuring a misty forest background and distinctive orange highlights.
+A minimalistic, premium GRUB theme inspired by HP Victus branding featuring a misty forest background and sleek modern design.
 
 ![HP Victus Theme Preview](themes/victus/background.png)
 
 ## Features
 
 - **Premium Design**: Clean, minimalistic interface with misty forest background
-- **HP Victus Branding**: Uses signature orange (#FF4500) highlight color
+- **Modern Color Scheme**: Sleek blue (#2980B9) highlights for a professional look
 - **Professional Typography**: Roboto font family for crisp, readable text
-- **OS Recognition**: Monochrome icons for Linux, Windows, and Recovery entries
+- **Extended OS Support**: Icons for Linux, Windows, Recovery, Arch Linux, and Endeavour OS
 - **Responsive Layout**: Menu positioned at 58% height for optimal visual balance
 - **Accessible**: High contrast colors for excellent readability
+- **Comprehensive Testing**: Built-in validation script ensures theme integrity
 
 ## Installation
 
@@ -53,6 +54,47 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 
 4. Reboot to see the new theme
 
+## Theme Validation
+
+Before and after installation, you can validate the theme integrity using the included validation script:
+
+```bash
+./validate-theme.sh
+```
+
+This comprehensive script checks:
+- File existence and structure
+- Theme configuration syntax
+- PNG file integrity
+- Font file validity (if GRUB tools available)
+- Color scheme configuration
+- OS icon mappings
+- Theme completeness score
+
+### Running Tests
+The validation script provides detailed feedback:
+- ✓ Green checkmarks indicate successful validation
+- ⚠ Yellow warnings indicate optional features or recommendations  
+- ✗ Red errors indicate critical issues that should be fixed
+
+Example output:
+```
+================================================
+HP Victus GRUB Theme Validation
+================================================
+Checking theme structure...
+✓ Theme configuration: themes/victus/theme.txt
+✓ Modern blue color scheme (#2980B9) configured
+✓ Arch Linux icon mapping configured
+✓ Endeavour OS icon mapping configured
+Theme completeness: 100% (12/12 components)
+✓ Excellent theme completeness
+================================================
+✓ Theme validation PASSED - No critical issues found
+The theme is ready for installation!
+================================================
+```
+
 ## Theme Structure
 
 ```
@@ -65,7 +107,9 @@ themes/victus/
 ├── icons/                 # OS type icons
 │   ├── linux.png         # Linux/Unix systems
 │   ├── windows.png       # Microsoft Windows
-│   └── recovery.png      # Recovery/rescue entries
+│   ├── recovery.png      # Recovery/rescue entries
+│   ├── arch.png          # Arch Linux
+│   └── endeavouros.png   # Endeavour OS
 └── highlight_*.png        # Selection highlight graphics
 ```
 
@@ -101,12 +145,15 @@ grub-mkfont -o themes/victus/fonts/YourFont-Size.pf2 -s SIZE /path/to/font.ttf
 
 | Element | Color | Usage |
 |---------|-------|-------|
-| `#FF4500` | Victus Orange | Selected item background |
+| `#2980B9` | Modern Blue | Selected item background, progress bar |
 | `#FFFFFF` | Pure White | Selected item text, title |
-| `#CCCCCC` | Light Gray | Normal menu text |
+| `#CCCCCC` | Light Gray | Normal menu text, icons |
 | `#333333` | Dark Gray | Progress bar background |
 | `#666666` | Medium Gray | Border elements |
 | `#000000` | Black | Desktop/fallback background |
+
+### Legacy Color Support
+The theme previously used `#FF4500` (Victus Orange) which can be restored by editing the color values in `theme.txt`.
 
 ## Customization
 

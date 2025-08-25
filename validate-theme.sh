@@ -52,6 +52,8 @@ validate_file "$THEME_DIR/fonts/Roboto-Bold-24.pf2" "Title font"
 validate_file "$THEME_DIR/icons/linux.png" "Linux icon"
 validate_file "$THEME_DIR/icons/windows.png" "Windows icon"
 validate_file "$THEME_DIR/icons/recovery.png" "Recovery icon"
+validate_file "$THEME_DIR/icons/arch.png" "Arch Linux icon"
+validate_file "$THEME_DIR/icons/endeavouros.png" "Endeavour OS icon"
 
 # Check highlight files
 validate_file "$THEME_DIR/highlight_c.png" "Highlight center"
@@ -85,11 +87,26 @@ if [ -f "$THEME_DIR/theme.txt" ]; then
         ((ERROR_COUNT++))
     fi
     
-    # Check for HP Victus orange color
-    if grep -q "#FF4500" "$THEME_DIR/theme.txt"; then
-        echo "✓ Victus orange color (#FF4500) configured"
+    # Check for modern color scheme
+    if grep -q "#2980B9" "$THEME_DIR/theme.txt"; then
+        echo "✓ Modern blue color scheme (#2980B9) configured"
+    elif grep -q "#FF4500" "$THEME_DIR/theme.txt"; then
+        echo "⚠ Legacy orange color found - consider updating to modern colors"
     else
-        echo "⚠ Victus orange color not found (theme will work but may not match branding)"
+        echo "⚠ No recognizable color scheme found"
+    fi
+    
+    # Check for new OS icon mappings
+    if grep -q 'class = "arch"' "$THEME_DIR/theme.txt"; then
+        echo "✓ Arch Linux icon mapping configured"
+    else
+        echo "⚠ Arch Linux icon mapping not found"
+    fi
+    
+    if grep -q 'class = "endeavouros"' "$THEME_DIR/theme.txt"; then
+        echo "✓ Endeavour OS icon mapping configured"
+    else
+        echo "⚠ Endeavour OS icon mapping not found"
     fi
 fi
 
@@ -123,6 +140,87 @@ if command -v identify &> /dev/null; then
             echo "✓ Icon $name: $dimensions"
         fi
     done
+fi
+
+# Advanced theme testing
+echo ""
+echo "Advanced theme functionality testing..."
+
+# Test theme syntax parsing
+if command -v grub-script-check &> /dev/null; then
+    echo "Testing GRUB theme syntax..."
+    if grub-script-check < "$THEME_DIR/theme.txt" 2>/dev/null; then
+        echo "✓ Theme syntax is valid"
+    else
+        echo "✗ Theme syntax has errors"
+        ((ERROR_COUNT++))
+    fi
+else
+    echo "⚠ grub-script-check not available - cannot validate theme syntax"
+fi
+
+# Test PNG file integrity
+echo "Testing PNG file integrity..."
+for png_file in "$THEME_DIR"/*.png "$THEME_DIR/icons"/*.png; do
+    if [ -f "$png_file" ]; then
+        # Simple PNG header check
+        if file "$png_file" | grep -q "PNG image data"; then
+            echo "✓ $(basename "$png_file") is a valid PNG"
+        else
+            echo "✗ $(basename "$png_file") is not a valid PNG"
+            ((ERROR_COUNT++))
+        fi
+    fi
+done
+
+# Test font files if grub-mkfont is available
+if command -v grub-mkfont &> /dev/null; then
+    echo "Testing font files..."
+    for font_file in "$THEME_DIR/fonts"/*.pf2; do
+        if [ -f "$font_file" ]; then
+            # Check if it's a valid PF2 font
+            if file "$font_file" | grep -q "data"; then
+                echo "✓ $(basename "$font_file") appears to be a valid font"
+            else
+                echo "⚠ $(basename "$font_file") may not be a valid PF2 font"
+            fi
+        fi
+    done
+else
+    echo "⚠ grub-mkfont not available - cannot validate font files"
+fi
+
+# Test theme completeness score
+echo ""
+echo "Theme completeness assessment..."
+total_components=12
+found_components=0
+
+[ -f "$THEME_DIR/theme.txt" ] && ((found_components++))
+[ -f "$THEME_DIR/background.png" ] && ((found_components++))
+[ -f "$THEME_DIR/fonts/Roboto-Regular-22.pf2" ] && ((found_components++))
+[ -f "$THEME_DIR/fonts/Roboto-Bold-24.pf2" ] && ((found_components++))
+[ -f "$THEME_DIR/icons/linux.png" ] && ((found_components++))
+[ -f "$THEME_DIR/icons/windows.png" ] && ((found_components++))
+[ -f "$THEME_DIR/icons/recovery.png" ] && ((found_components++))
+[ -f "$THEME_DIR/icons/arch.png" ] && ((found_components++))
+[ -f "$THEME_DIR/icons/endeavouros.png" ] && ((found_components++))
+[ -f "$THEME_DIR/highlight_c.png" ] && ((found_components++))
+[ -f "$THEME_DIR/highlight_w.png" ] && ((found_components++))
+[ -f "$THEME_DIR/highlight_e.png" ] && ((found_components++))
+
+completeness=$((found_components * 100 / total_components))
+echo "Theme completeness: $completeness% ($found_components/$total_components components)"
+
+if [ $completeness -ge 90 ]; then
+    echo "✓ Excellent theme completeness"
+elif [ $completeness -ge 75 ]; then
+    echo "✓ Good theme completeness"
+elif [ $completeness -ge 50 ]; then
+    echo "⚠ Moderate theme completeness - some features missing"
+else
+    echo "✗ Poor theme completeness - many features missing"
+    ((ERROR_COUNT++))
 fi
 
 # Summary

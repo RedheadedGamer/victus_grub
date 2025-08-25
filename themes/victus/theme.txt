@@ -1,5 +1,5 @@
 # HP Victus GRUB Theme
-# Minimalistic, premium design with orange highlights
+# Minimalistic, premium design with sleek modern colors
 
 # Desktop background
 desktop-image: "background.png"
@@ -49,7 +49,7 @@ title-color: "#FFFFFF"
     height = 16
     font = "fonts/Roboto-Regular-22"
     text_color = "#CCCCCC"
-    fg_color = "#FF4500"
+    fg_color = "#2980B9"
     bg_color = "#333333"
     border_color = "#666666"
     text = "@TIMEOUT_NOTIFICATION_LONG@"
@@ -72,4 +72,14 @@ terminal-font: "fonts/Roboto-Regular-22"
 + icon {
     class = "recovery"
     image = "icons/recovery.png"
+}
+
++ icon {
+    class = "arch"
+    image = "icons/arch.png"
+}
+
++ icon {
+    class = "endeavouros"
+    image = "icons/endeavouros.png"
 }
