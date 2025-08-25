@@ -17,14 +17,14 @@ title-color: "#FFFFFF"
     width = 25%
     height = 25%
     
-    item_font = "fonts/Roboto-Regular-26"
-    item_color = "#FFFFFF"
-    item_spacing = 10
+    item_font = "fonts/Roboto-Regular-20"
+    item_color = "rgba(255,255,255,0.7)"
+    item_spacing = 8
     item_height = 44
     item_padding = 16
     item_icon_space = 32
     
-    selected_item_font = "fonts/Roboto-Regular-26"
+    selected_item_font = "fonts/Roboto-Regular-20"
     selected_item_color = "#FFFFFF"
     selected_item_pixmap_style = "highlight_*.png"
     
@@ -40,33 +40,41 @@ title-color: "#FFFFFF"
     }
 }
 
-# Progress bar for timeout - Enhanced contrast and readability
+# Progress bar for timeout - Thin minimal design at bottom
 + progress_bar {
     id = "__timeout__"
     left = 5%
-    top = 80%
-    width = 25%
-    height = 18
-    font = "fonts/Roboto-Regular-26"
+    top = 95%
+    width = 90%
+    height = 6
+    font = "fonts/Roboto-Regular-18"
     text_color = "#FFFFFF"
-    fg_color = "#C0C0C0"
-    bg_color = "#202020C0"
-    border_color = "#808080"
+    fg_color = "#64B5F6"
+    bg_color = "rgba(64,64,64,0.8)"
+    border_color = "rgba(100,150,200,0.6)"
     text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 
 # Terminal settings
-terminal-font: "fonts/Roboto-Regular-26"
+terminal-font: "fonts/Roboto-Regular-20"
 
-# Inspirational quote on the right side - Stylish design element with larger black text (no background)
+# Inspirational quote on the right side - Larger, bolder sans-serif with shadow effect for legibility
+# Shadow background for better legibility
++ image {
+    left = 74%
+    top = 49%
+    file = "quote_shadow.png"
+}
+
+# Main quote text
 + label {
-    left = 70%
-    top = 45%
-    width = 25%
-    height = 20%
+    left = 75%
+    top = 50%
+    width = 22%
+    height = 18%
     text = "Alone at the edge of the universe humming a tune..."
-    font = "fonts/LiberationSerif-Regular-40"
-    color = "#000000"
+    font = "fonts/Roboto-Bold-48"
+    color = "#FFFFFF"
     align = "center"
 }
 
