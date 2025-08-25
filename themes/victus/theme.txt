@@ -1,62 +1,74 @@
 # HP Victus GRUB Theme
-# Minimalistic, premium design with sleek modern colors
+# Ultra-sleek, premium design with modern minimalist aesthetics
 
 # Desktop background
 desktop-image: "background.png"
 desktop-color: "#000000"
 
-# Title settings (top of screen)
+# Title settings (top of screen) - Refined positioning
 title-text: ""
 title-font: "fonts/Roboto-Bold-24"
 title-color: "#FFFFFF"
 
-# Boot menu settings
+# Boot menu settings - Compact menu positioned to avoid Victus branding with rounded corners
 + boot_menu {
-    left = 25%
-    top = 58%
-    width = 50%
+    left = 5%
+    top = 40%
+    width = 25%
     height = 25%
     
-    item_font = "fonts/Roboto-Regular-22"
-    item_color = "#CCCCCC"
-    item_spacing = 4
-    item_height = 32
-    item_padding = 8
-    item_icon_space = 24
+    item_font = "fonts/Roboto-Regular-26"
+    item_color = "#FFFFFF"
+    item_spacing = 10
+    item_height = 44
+    item_padding = 16
+    item_icon_space = 32
     
-    selected_item_font = "fonts/Roboto-Regular-22"
+    selected_item_font = "fonts/Roboto-Regular-26"
     selected_item_color = "#FFFFFF"
     selected_item_pixmap_style = "highlight_*.png"
     
-    # Menu box appearance
+    # Menu box appearance with rounded corners for modern look
     scrollbar = false
     
-    # Icon mapping for different OS types
+    # Icon mapping for different OS types - Optimized positioning
     + icon {
-        left = 2
-        top = 4
+        left = 4
+        top = 8
         width = 24
         height = 24
     }
 }
 
-# Highlight style for selected items
+# Progress bar for timeout - Enhanced contrast and readability
 + progress_bar {
     id = "__timeout__"
-    left = 25%
-    top = 88%
-    width = 50%
-    height = 16
-    font = "fonts/Roboto-Regular-22"
-    text_color = "#CCCCCC"
-    fg_color = "#2980B9"
-    bg_color = "#333333"
-    border_color = "#666666"
+    left = 5%
+    top = 80%
+    width = 25%
+    height = 18
+    font = "fonts/Roboto-Regular-26"
+    text_color = "#FFFFFF"
+    fg_color = "#C0C0C0"
+    bg_color = "#202020C0"
+    border_color = "#808080"
     text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 
 # Terminal settings
-terminal-font: "fonts/Roboto-Regular-22"
+terminal-font: "fonts/Roboto-Regular-26"
+
+# Inspirational quote on the right side - Stylish design element with larger black text (no background)
++ label {
+    left = 70%
+    top = 45%
+    width = 25%
+    height = 20%
+    text = "Alone at the edge of the universe humming a tune..."
+    font = "fonts/LiberationSerif-Regular-40"
+    color = "#000000"
+    align = "center"
+}
 
 # OS Class icon mapping
 + icon {
