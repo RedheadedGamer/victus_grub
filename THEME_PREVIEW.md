@@ -3,40 +3,41 @@
 ## Theme Features Overview
 
 ### Visual Design
-- **Background**: Misty forest scene with natural, calming aesthetics
-- **Layout**: Menu positioned at 58% vertical height for optimal visual balance
-- **Typography**: Professional Roboto font family (Regular 22px for menu, Bold 24px for titles)
-- **Color Scheme**: Dark theme with HP Victus signature orange (#FF4500) highlights
+- **Background**: Elegant misty forest scene with sophisticated, calming aesthetics
+- **Layout**: Ultra-sleek menu positioned at 55% vertical height with 30% left margin for perfect balance
+- **Typography**: Premium Roboto font family (Regular 22px for menu, Bold 24px for titles)
+- **Color Scheme**: Modern dark theme with enhanced blue (#3498DB) highlights and improved contrast
 
-### Menu Appearance
+### Enhanced Menu Appearance
 ```
 ┌─────────────────────────────────────────────────────────┐
-│                    Misty Forest Background              │
+│                    Sophisticated Background             │
+│                                                         │
+│                    [HP VICTUS BRANDING]                 │
 │                                                         │
 │                                                         │
-│                    [Title Area]                         │
+│              ┌─────────────────────────┐                │
+│              │  ○ Ubuntu               │                │ 55% height  
+│              │  ▶ Ubuntu (Advanced)    │                │ (optimized)
+│              │  ⊞ Windows Boot Manager │                │
+│              │  ⚠ System Recovery      │                │
+│              └─────────────────────────┘                │
 │                                                         │
-│           ┌─────────────────────────────────┐           │
-│           │  ○ Ubuntu                       │           │ 58% height
-│           │  ▶ Ubuntu (Advanced Options)    │           │
-│           │  ⊞ Windows Boot Manager         │           │
-│           │  ⚠ System Recovery              │           │
-│           └─────────────────────────────────┘           │
-│                                                         │
-│           ████████████████                              │ Progress bar
-│           Use ↑ and ↓ to change selection              │
+│              ██████████████████                         │ Enhanced progress
+│              Use ↑ and ↓ to change selection           │
 └─────────────────────────────────────────────────────────┘
 ```
 
-### Color Specifications
+### Enhanced Color Specifications
 
 | Element | Color Code | Description |
 |---------|------------|-------------|
-| Normal Text | `#CCCCCC` | Light gray for regular menu items |
+| Normal Text | `#E0E0E0` | Enhanced light silver for superior readability |
 | Selected Text | `#FFFFFF` | Pure white for highlighted selection |
-| Highlight Background | `#FF4500` | HP Victus signature orange |
+| Highlight Background | `#3498DB` | Modern enhanced blue for sleek appearance |
 | Title Text | `#FFFFFF` | White for title/header text |
-| Progress Bar | `#FF4500` | Orange progress indicator |
+| Progress Bar | `#3498DB` | Enhanced blue progress indicator |
+| Progress Background | `#2C3E50` | Dark slate for refined contrast |
 | Background | `#000000` | Black fallback background |
 
 ### Icon System
@@ -47,20 +48,22 @@ The theme includes minimal monochrome icons for OS recognition:
 - **Windows**: Four-pane window icon
 - **Recovery**: Circle with cross symbol
 
-### Typography Details
+### Enhanced Typography Details
 
 - **Font Family**: Roboto (professional, highly readable)
 - **Menu Items**: Roboto Regular, 22px
 - **Titles**: Roboto Bold, 24px
-- **Spacing**: 4px between menu items
-- **Icon Space**: 24px reserved for OS icons
+- **Enhanced Spacing**: 6px between menu items (improved from 4px)
+- **Optimized Icon Space**: 28px reserved for OS icons (enhanced from 24px)
+- **Item Padding**: 12px for better visual breathing room
 
-### Layout Specifications
+### Optimized Layout Specifications
 
-- **Menu Position**: 25% from left, 58% from top
-- **Menu Dimensions**: 50% width, 25% height
-- **Progress Bar**: 25% from left, 88% from top
-- **Item Height**: 32px with 8px padding
+- **Menu Position**: 30% from left, 55% from top (centered for perfect balance)
+- **Menu Dimensions**: 40% width, 28% height (sleeker proportions)
+- **Progress Bar**: 30% from left, 86% from top, 40% width (aligned with menu)
+- **Item Height**: 36px with enhanced 12px padding (increased from 32px/8px)
+- **Enhanced Visual Hierarchy**: Improved spacing and positioning for modern aesthetics
 
 ### Technical Details
 

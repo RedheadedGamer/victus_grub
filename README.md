@@ -1,17 +1,24 @@
 # HP Victus GRUB Theme
 
-A minimalistic, premium GRUB theme inspired by HP Victus branding featuring a misty forest background and sleek modern design.
+A minimalistic, premium GRUB theme inspired by HP Victus branding featuring ultra-sleek modern design with optimized layout and enhanced visual hierarchy.
 
-![HP Victus Theme Preview](themes/victus/background.png)
+![HP Victus Theme Background](themes/victus/background.png)
+
+## Working Theme Preview
+
+![HP Victus GRUB Theme in Action](grub_theme_preview.png)
+
+*The sleek HP Victus GRUB theme featuring centered menu layout, modern color scheme, and enhanced spacing for optimal readability.*
 
 ## Features
 
-- **Premium Design**: Clean, minimalistic interface with misty forest background
-- **Modern Color Scheme**: Sleek blue (#2980B9) highlights for a professional look
-- **Professional Typography**: Roboto font family for crisp, readable text
+- **Ultra-Sleek Design**: Refined minimalistic interface with optimized layout positioning
+- **Enhanced Visual Hierarchy**: Centered menu (30%/55% position) for perfect balance  
+- **Modern Color Palette**: Sophisticated blue (#3498DB) with improved contrast (#E0E0E0 text)
+- **Premium Typography**: Roboto font family with increased spacing for superior readability
 - **Extended OS Support**: Icons for Linux, Windows, Recovery, Arch Linux, and Endeavour OS
-- **Responsive Layout**: Menu positioned at 58% height for optimal visual balance
-- **Accessible**: High contrast colors for excellent readability
+- **Optimized Layout**: Menu repositioned with 40% width and enhanced padding for sleeker appearance
+- **Enhanced Accessibility**: High contrast colors and improved spacing for excellent readability
 - **Comprehensive Testing**: Built-in validation script ensures theme integrity
 
 ## Installation
@@ -145,15 +152,15 @@ grub-mkfont -o themes/victus/fonts/YourFont-Size.pf2 -s SIZE /path/to/font.ttf
 
 | Element | Color | Usage |
 |---------|-------|-------|
-| `#2980B9` | Modern Blue | Selected item background, progress bar |
+| `#3498DB` | Enhanced Blue | Selected item background, progress bar foreground |
 | `#FFFFFF` | Pure White | Selected item text, title |
-| `#CCCCCC` | Light Gray | Normal menu text, icons |
-| `#333333` | Dark Gray | Progress bar background |
-| `#666666` | Medium Gray | Border elements |
+| `#E0E0E0` | Light Silver | Normal menu text, enhanced readability |
+| `#2C3E50` | Dark Slate | Progress bar background |
+| `#5D6D7E` | Medium Slate | Border elements, refined contrast |
 | `#000000` | Black | Desktop/fallback background |
 
-### Legacy Color Support
-The theme previously used `#FF4500` (Victus Orange) which can be restored by editing the color values in `theme.txt`.
+### Enhanced Color Philosophy
+The updated color scheme provides superior contrast and readability with a modern, professional appearance. The refined blue (#3498DB) offers better visibility while maintaining the sleek aesthetic.
 
 ## Customization
 
@@ -164,15 +171,17 @@ Edit `themes/victus/theme.txt` and modify color values:
 - Highlight graphics: Recreate `highlight_*.png` files
 
 ### Adjusting Layout
-Modify position and size values in `theme.txt`:
-- `left`, `top`: Position (percentage or pixels)
-- `width`, `height`: Dimensions (percentage or pixels)
+Modify position and size values in `theme.txt` (current optimized values):
+- **Menu Position**: `left = 30%`, `top = 55%` (centered for optimal balance)
+- **Menu Size**: `width = 40%`, `height = 28%` (sleek proportions)
+- **Progress Bar**: `left = 30%`, `top = 86%`, `width = 40%` (aligned with menu)
+- **Enhanced Spacing**: `item_spacing = 6`, `item_padding = 12` (improved readability)
 
 ### Background Image
 Replace `themes/victus/background.png` with your image:
 - Recommended resolution: 1920x1080 or higher
 - Format: PNG for best quality
-- Consider menu area positioning at ~58% height
+- Consider menu area positioning at 55% height (updated for sleeker layout)
 
 ## Troubleshooting
 
