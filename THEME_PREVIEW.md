@@ -3,10 +3,10 @@
 ## Theme Features Overview
 
 ### Visual Design
-- **Background**: Atmospheric smokey skyscraper scene with sophisticated urban aesthetics and Victus branding
-- **Layout**: Ultra-sleek menu positioned at 55% vertical height with 30% left margin for perfect balance
-- **Typography**: Premium Roboto font family (Regular 22px for menu, Bold 24px for titles)
-- **Color Scheme**: Modern transparent gray theme optimized for smokey backgrounds with enhanced contrast
+- **Background**: Atmospheric smokey skyscraper scene with sophisticated urban aesthetics and modern architecture
+- **Layout**: Ultra-sleek menu positioned at 45% vertical height with 5% left margin for optimal visibility
+- **Typography**: Premium Roboto font family (Regular 26px for menu, Bold 24px for titles)
+- **Color Scheme**: Modern blue theme (#2980B9) optimized for smokey skyscraper backgrounds with enhanced contrast
 
 ### Enhanced Menu Appearance
 ```
@@ -18,13 +18,13 @@
 │                                                         │
 │                                                         │
 │              ┌─────────────────────────┐                │
-│              │  ○ Ubuntu               │                │ 55% height  
+│              │  ○ Ubuntu               │                │ 45% height  
 │              │  ▶ Ubuntu (Advanced)    │                │ (optimized)
 │              │  ⊞ Windows Boot Manager │                │ Semi-transparent
-│              │  ⚠ System Recovery      │                │ gray overlay
+│              │  ⚠ System Recovery      │                │ charcoal overlay
 │              └─────────────────────────┘                │
 │                                                         │
-│              ████████████░░░░░░                         │ Gray progress
+│              ████████████░░░░░░                         │ Modern blue progress
 │              Use ↑ and ↓ to change selection           │
 └─────────────────────────────────────────────────────────┘
 ```
@@ -33,13 +33,13 @@
 
 | Element | Color Code | Description |
 |---------|------------|-------------|
-| Normal Text | `#B0B0B0` | Smokey light gray perfectly suited for atmospheric backgrounds |
-| Selected Text | `#F0F0F0` | Nearly white for highlighted selection with subtle gray tone |
-| Highlight Background | Semi-transparent gray | Translucent overlay that blends with smokey backgrounds |
+| Normal Text | `#FFFFFF` | Pure white text perfectly suited for atmospheric skyscraper backgrounds |
+| Selected Text | `#2980B9` | Modern blue for highlighted selection with professional appearance |
+| Highlight Background | Semi-transparent charcoal | Translucent overlay that blends with smokey skyscraper backgrounds |
 | Title Text | `#FFFFFF` | Pure white for title/header text |
-| Progress Bar | `#808080` | Medium gray progress indicator |
-| Progress Background | `#40404080` | Semi-transparent dark gray with opacity |
-| Background | Smokey skyscraper scene | Atmospheric urban landscape with Victus branding |
+| Progress Bar | `#2980B9` | Modern blue progress indicator |
+| Progress Background | `#202020` | Dark charcoal background with good contrast |
+| Background | Smokey skyscraper scene | Atmospheric urban landscape with modern architecture |
 
 ### Icon System
 
@@ -52,7 +52,7 @@ The theme includes minimal monochrome icons for OS recognition:
 ### Enhanced Typography Details
 
 - **Font Family**: Roboto (professional, highly readable)
-- **Menu Items**: Roboto Regular, 22px
+- **Menu Items**: Roboto Regular, 26px
 - **Titles**: Roboto Bold, 24px
 - **Enhanced Spacing**: 6px between menu items (improved from 4px)
 - **Optimized Icon Space**: 28px reserved for OS icons (enhanced from 24px)

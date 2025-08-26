@@ -8,7 +8,7 @@ A minimalistic, premium GRUB theme inspired by HP Victus branding featuring ultr
 
 ![HP Victus GRUB Theme in Action](grub_theme_preview.png)
 
-*The enhanced HP Victus GRUB theme featuring left-positioned menu layout, atmospheric smokey skyscraper background, dark semi-transparent overlays, and white text optimized for maximum readability.*
+*The enhanced HP Victus GRUB theme featuring left-positioned menu layout, atmospheric smokey skyscraper background, dark semi-transparent overlays, and modern blue highlights optimized for maximum readability.*
 
 ## Features
 
@@ -108,7 +108,7 @@ The theme is ready for installation!
 ```
 themes/victus/
 ├── theme.txt              # Main theme configuration
-├── background.png         # Misty forest background (1920x1080)
+├── background.png         # Smokey skyscraper background (3840x2160)
 ├── fonts/                 # Font files
 │   ├── Roboto-Regular-22.pf2  # Menu items font
 │   └── Roboto-Bold-24.pf2     # Title font
@@ -153,7 +153,7 @@ grub-mkfont -o themes/victus/fonts/YourFont-Size.pf2 -s SIZE /path/to/font.ttf
 
 | Element | Color | Usage |
 |---------|-------|-------|
-| `#3498DB` | Enhanced Blue | Selected item background, progress bar foreground |
+| `#2980B9` | Modern Blue | Selected item background, progress bar foreground |
 | `#FFFFFF` | Pure White | Selected item text, title |
 | `#E0E0E0` | Light Silver | Normal menu text, enhanced readability |
 | `#2C3E50` | Dark Slate | Progress bar background |
@@ -161,7 +161,7 @@ grub-mkfont -o themes/victus/fonts/YourFont-Size.pf2 -s SIZE /path/to/font.ttf
 | `#000000` | Black | Desktop/fallback background |
 
 ### Enhanced Color Philosophy
-The updated color scheme provides superior contrast and readability with a modern, professional appearance. The refined blue (#3498DB) offers better visibility while maintaining the sleek aesthetic.
+The updated color scheme provides superior contrast and readability with a modern, professional appearance. The modern blue (#2980B9) offers better visibility while maintaining the sleek aesthetic.
 
 ## Customization
 
