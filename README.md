@@ -8,18 +8,21 @@ A minimalistic, premium GRUB theme inspired by HP Victus branding featuring ultr
 
 ![HP Victus GRUB Theme in Action](grub_theme_preview.png)
 
-*The enhanced HP Victus GRUB theme featuring left-positioned menu layout, atmospheric smokey skyscraper background, dark semi-transparent overlays, and white text optimized for maximum readability.*
+*The enhanced HP Victus GRUB theme featuring enhanced menu readability with dark backgrounds, improved progress bar styling, atmospheric smokey skyscraper background, high contrast white text with cyan accents, and shutdown option for optimal user experience.*
 
 ## Features
 
-- **Ultra-Sleek Design**: Refined minimalistic interface with dark semi-transparent overlays
-- **Enhanced Readability**: Left-positioned menu (5%/45% position) avoids overlapping Victus branding
+- **Ultra-Sleek Design**: Refined minimalistic interface with enhanced dark backgrounds
+- **Enhanced Menu Readability**: Semi-transparent black background (#000000CC) with bright white text for maximum contrast
+- **Improved Progress Bar**: Modern styling with cyan accents (#00D4FF) and increased height for better visibility
 - **Atmospheric Background**: Smokey skyscraper scene with Victus branding optimized for menu placement
-- **High Contrast Colors**: White text (#FFFFFF) on dark overlays for maximum readability
+- **High Contrast Colors**: White text (#FFFFFF) with cyan highlights (#00D4FF) for optimal readability
 - **Premium Typography**: Roboto font family with enhanced contrast for superior visibility
-- **Extended OS Support**: Icons for Linux, Windows, Recovery, Arch Linux, and Endeavour OS
-- **Smart Layout**: Menu repositioned with 25% width and dark overlays (#1A1A1ACC) for excellent contrast
-- **Enhanced Accessibility**: High contrast white text and reduced transparency for optimal readability
+- **Extended OS Support**: Icons for Linux, Windows, Recovery, Arch Linux, EndeavourOS, and Shutdown
+- **Smart Layout**: Menu positioned to avoid branding overlap with proper dark overlays
+- **Resolution Optimized**: Configured for 1920x1080 displays with matching terminal resolution
+- **Shutdown Option**: Added system shutdown option directly in GRUB menu
+- **Enhanced Accessibility**: High contrast design with improved visual hierarchy
 - **Comprehensive Testing**: Built-in validation script ensures theme integrity
 
 ## Installation
@@ -149,21 +152,19 @@ grub-mkfont -o themes/victus/fonts/YourFont-Size.pf2 -s SIZE /path/to/font.ttf
 ```
 3. Update `theme.txt` font references
 
-## Color Scheme
+## Enhanced Color Scheme
 
 | Element | Color | Usage |
 |---------|-------|-------|
-| `#E0ECF9` | Soft Silver-Blue | Selected item color, progress bar foreground, scrollbar thumb |
+| `#00D4FF` | Bright Cyan | Selected item color, progress bar foreground, border accents |
 | `#FFFFFF` | Pure White | Normal menu text, title, progress text |
-| `#1A1A1ACC` | Semi-transparent Charcoal | Menu background with 80% opacity |
-| `#202020` | Dark Charcoal | Progress bar background |
-| `#808080` | Medium Gray | Border elements, progress bar border |
-| `#303030CC` | Semi-transparent Dark Gray | Scrollbar track color |
+| `#000000CC` | Semi-transparent Black | Menu background and progress bar background with high contrast |
 | `#000000` | Black | Desktop/fallback background |
+| `#303030CC` | Semi-transparent Dark Gray | Scrollbar track color |
 | `#000103` | Near Black | Quote text color |
 
 ### Enhanced Color Philosophy
-The updated color scheme provides superior contrast and readability with a modern, professional appearance. The soft silver-blue (#E0ECF9) offers excellent visibility while maintaining the sleek aesthetic with subtle blue tinting.
+The enhanced color scheme provides superior contrast and readability with a modern, professional appearance. The bright cyan (#00D4FF) offers excellent visibility against the dark background while maintaining the sleek aesthetic with vibrant accents that improve the overall user experience.
 
 ## Customization
 
