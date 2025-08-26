@@ -5,7 +5,7 @@ desktop-image: "background.png"
 desktop-color: "#000000"
 
 title-text: ""
-title-font: "fonts/Roboto-Bold-24"
+title-font: "fonts/Roboto-Bold-24.pf2"
 title-color: "#FFFFFF"
 
 # Boot menu - Sleeker unified design
@@ -15,14 +15,14 @@ title-color: "#FFFFFF"
     width = 25%
     height = 35%
 
-    item_font = "fonts/Roboto-Regular-26"
+    item_font = "fonts/Roboto-Regular-26.pf2"
     item_color = "#FFFFFF"
     item_spacing = 12
     item_height = 44
     item_padding = 20
     item_icon_space = 32
 
-    selected_item_font = "fonts/Roboto-Regular-26"
+    selected_item_font = "fonts/Roboto-Regular-26.pf2"
     selected_item_color = "#E0ECF9"
     selected_item_pixmap_style = "underline.png"
 
@@ -38,7 +38,7 @@ title-color: "#FFFFFF"
     top = 82%
     width = 25%
     height = 18
-    font = "fonts/Roboto-Regular-22"
+    font = "fonts/Roboto-Regular-22.pf2"
     text_color = "#FFFFFF"
     fg_color = "#E0ECF9"
     bg_color = "#202020"
@@ -46,7 +46,7 @@ title-color: "#FFFFFF"
     text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 
-terminal-font: "fonts/Roboto-Regular-26"
+terminal-font: "fonts/Roboto-Regular-26.pf2"
 
 + label {
     left = 70%
@@ -54,7 +54,7 @@ terminal-font: "fonts/Roboto-Regular-26"
     width = 25%
     height = 25%
     text = "Alone at the edge of the universe\nhumming a tune\nFor merely dreaming we were snow..."
-    font = "fonts/LiberationSerif-Regular-40"
+    font = "fonts/LiberationSerif-Regular-40.pf2"
     color = "#000103"
     align = "right"
 }
