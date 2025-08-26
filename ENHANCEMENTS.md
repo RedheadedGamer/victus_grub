@@ -5,7 +5,7 @@
 ### Menu Improvements
 - **Smaller, more compact menu** - Reduced from 35% to 25% width and height
 - **Larger fonts** - Increased from 22px to 26px for better readability
-- **Enhanced spacing** - Optimized item height (42px) and spacing (8px) for larger text
+- **Enhanced spacing** - Optimized item height (44px) and spacing (12px) for larger text
 
 ### Inspirational Quotes Feature
 - **Right-side quote display** - Balanced layout with quote positioned opposite the menu
