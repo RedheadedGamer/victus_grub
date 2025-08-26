@@ -3,7 +3,15 @@
 # Random Quote Generator for HP Victus GRUB Theme
 # This script updates the theme with a randomly selected inspirational quote
 
-THEME_FILE="themes/victus/theme.txt"
+# Use provided theme file path or default to relative path
+THEME_FILE="${1:-themes/victus/theme.txt}"
+
+# Check if theme file exists
+if [ ! -f "$THEME_FILE" ]; then
+    echo "Error: Theme file not found at $THEME_FILE"
+    echo "Usage: $0 [theme_file_path]"
+    exit 1
+fi
 
 # Array of inspirational quotes
 quotes=(
@@ -34,31 +42,34 @@ formatted_quote=$(echo "$selected_quote" | tr '|' '\n')
 
 # Create temporary file with the updated theme
 temp_file=$(mktemp)
+
+# Update the existing label block with the quote
 awk -v quote="$formatted_quote" '
-/^# Inspirational quote on the right side/ {
+/^\+ label \{/ {
+    in_label = 1
     print
-    getline
-    print
-    getline
-    print
-    getline
-    print
-    getline
-    print
-    getline
+    next
+}
+in_label && /^    text = / {
     print "    text = \"" quote "\""
-    # Skip the old text line
-    while (getline && $0 !~ /^ *font = /) {
-        # Skip until we find the font line
-    }
+    next
+}
+in_label && /^\}/ {
+    in_label = 0
     print
     next
 }
 { print }
 ' "$THEME_FILE" > "$temp_file"
 
-# Replace the original file
-mv "$temp_file" "$THEME_FILE"
-
-echo "Updated GRUB theme with quote #$((random_index + 1))"
-echo "Quote: $formatted_quote"
+# Check if the replacement was successful
+if [ -s "$temp_file" ]; then
+    # Replace the original file
+    mv "$temp_file" "$THEME_FILE"
+    echo "Updated GRUB theme with quote #$((random_index + 1))"
+    echo "Quote: $formatted_quote"
+else
+    rm -f "$temp_file"
+    echo "Error: Failed to update theme file"
+    exit 1
+fi

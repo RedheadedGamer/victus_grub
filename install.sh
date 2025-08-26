@@ -46,13 +46,17 @@ chmod +x "$THEME_DIR/randomize-quote.sh"
 
 # Randomize quote for initial installation
 echo "Selecting random inspirational quote..."
-cd "$THEME_DIR"
-./randomize-quote.sh
-cd - > /dev/null
+if "$THEME_DIR/randomize-quote.sh" "$THEME_DIR/theme.txt"; then
+    echo "Quote randomization completed successfully"
+else
+    echo "Warning: Quote randomization failed, but installation will continue"
+fi
 
 # Set proper permissions
 chmod -R 644 "$THEME_DIR"
 find "$THEME_DIR" -type d -exec chmod 755 {} \;
+# Ensure randomize-quote.sh remains executable
+chmod +x "$THEME_DIR/randomize-quote.sh"
 
 echo "Backing up GRUB configuration to: $BACKUP_CONFIG"
 cp "$GRUB_CONFIG" "$BACKUP_CONFIG"
@@ -97,7 +101,7 @@ echo "- Dark semi-transparent overlays for optimal contrast"
 echo "- Comprehensive OS icon support (Linux, Windows, Recovery, Arch, EndeavourOS)"
 echo ""
 echo "💡 Additional features:"
-echo "  To change quote manually: sudo $THEME_DIR/randomize-quote.sh && sudo update-grub"
+echo "  To change quote manually: sudo $THEME_DIR/randomize-quote.sh $THEME_DIR/theme.txt && sudo update-grub"
 echo "  Quote randomization happens on theme installation and can be run anytime"
 echo ""
 echo "Configuration backup saved to: $BACKUP_CONFIG"
