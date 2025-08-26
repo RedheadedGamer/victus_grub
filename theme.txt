@@ -1,0 +1,64 @@
+# HP Victus GRUB Theme
+# Ultra-sleek, premium design with modern minimalist aesthetics
+
+desktop-image: "background.png"
+desktop-color: "#000000"
+
+title-text: ""
+title-font: "Roboto Bold 24"
+title-color: "#FFFFFF"
+
+# 1. First, define the background image component.
+# It's drawn on the screen first.
++ canvas {
+    left = 5%
+    top = 45%
+    width = 25%
+    height = 35%
+    # A semi-transparent black color. You can change this.
+    # Format is #RRGGBBAA (Red, Green, Blue, Alpha)
+    # AA=00 is fully transparent, AA=FF is fully opaque.
+    color = "#000000B0"
+}
+
+# 2. Second, define the boot menu.
+# It will be drawn on top of the image above.
++ boot_menu {
+    left = 5%
+    top = 45%
+    width = 25%
+    height = 35%
+
+    item_font = "Roboto Regular 26"
+    item_color = "#313b52"
+    item_spacing = 12
+    item_height = 44
+    item_padding = 20
+    item_icon_space = 32
+    item_pixmap_style = "highlight_e.png"
+
+    selected_item_font = "Roboto Regular 26"
+    selected_item_color = "#E0ECF9"
+    selected_item_pixmap_style = "highlight_c.png"
+
+    # The "bg_color" property is invalid and has been removed.
+    scrollbar = true
+    scrollbar_width = 20
+    scrollbar_thumb = "scrollbar_thumb.png"
+}
+
++ progress_bar {
+    id = "__timeout__"
+    left = 5%
+    top = 82%
+    width = 25%
+    height = 18
+    font = "Roboto Regular 22"
+    text_color = "#313b52"
+    fg_color = "#E0ECF9"
+    bg_color = "#202020"
+    border_color = "#808080"
+    text = "@TIMEOUT_NOTIFICATION_LONG@"
+}
+
+terminal-font: "Roboto Regular 26"
