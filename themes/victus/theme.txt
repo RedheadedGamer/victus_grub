@@ -1,12 +1,12 @@
 # HP Victus GRUB Theme
 # Ultra-sleek, premium design with modern minimalist aesthetics
 
-desktop-image: "background.png"
-desktop-color: "#000000"
+desktop-image = "background.png"
+desktop-color = "#000000"
 
-title-text: ""
-title-font: "fonts/Roboto-Bold-24"
-title-color: "#FFFFFF"
+title-text = ""
+title-font = "fonts/Roboto-Bold-24"
+title-color = "#FFFFFF"
 
 # Boot menu - Sleeker unified design
 + boot_menu {
@@ -23,16 +23,14 @@ title-color: "#FFFFFF"
     item_icon_space = 32
 
     selected_item_font = "fonts/Roboto-Regular-26"
-    selected_item_color = "#E0ECF9"   # soft silver with subtle blue tint
+    selected_item_color = "#E0ECF9"
     selected_item_pixmap_style = "underline.png"
 
-    # Unified menu appearance
-    bg_color = "#1A1A1ACC"        # soft charcoal grey, 80% opacity
+    bg_color = "#1A1A1ACC"
     scrollbar = true
-    scrollbar_thumb_color = "#E0ECF9" # match blue-tinted silver
+    scrollbar_thumb_color = "#E0ECF9"
     scrollbar_track_color = "#303030CC"
 
-    # Icon mapping for different OS types
     icon = {
         left = 6
         top = 10
@@ -55,14 +53,14 @@ title-color: "#FFFFFF"
     text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 
-terminal-font: "fonts/Roboto-Regular-26"
+terminal-font = "fonts/Roboto-Regular-26"
 
 + label {
     left = 70%
     top = 70%
     width = 25%
     height = 25%
-    text = "\"Alone at the edge of the universe\nhumming a tune\nFor merely dreaming we were snow...\""
+    text = "Alone at the edge of the universe\nhumming a tune\nFor merely dreaming we were snow..."
     font = "fonts/LiberationSerif-Regular-40"
     color = "#000103"
     align = "right"
