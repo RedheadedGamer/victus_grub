@@ -33,7 +33,7 @@ title-color: "#FFFFFF"
     scrollbar_track_color = "#303030CC"
 
     # Icon mapping for different OS types
-    + icon {
+    icon {
         left = 6
         top = 10
         width = 24
