@@ -4,7 +4,7 @@
 
 ### Visual Design
 - **Background**: Atmospheric smokey skyscraper scene with sophisticated urban aesthetics and Victus branding
-- **Layout**: Ultra-sleek menu positioned at 55% vertical height with 30% left margin for perfect balance
+- **Layout**: Ultra-sleek menu positioned at 45% vertical height with 5% left margin for perfect balance
 - **Typography**: Premium Roboto font family (Regular 22px for menu, Bold 24px for titles)
 - **Color Scheme**: Modern transparent gray theme optimized for smokey backgrounds with enhanced contrast
 
@@ -18,7 +18,7 @@
 │                                                         │
 │                                                         │
 │              ┌─────────────────────────┐                │
-│              │  ○ Ubuntu               │                │ 55% height  
+│              │  ○ Ubuntu               │                │ 45% height  
 │              │  ▶ Ubuntu (Advanced)    │                │ (optimized)
 │              │  ⊞ Windows Boot Manager │                │ Semi-transparent
 │              │  ⚠ System Recovery      │                │ gray overlay
@@ -33,12 +33,13 @@
 
 | Element | Color Code | Description |
 |---------|------------|-------------|
-| Normal Text | `#B0B0B0` | Smokey light gray perfectly suited for atmospheric backgrounds |
-| Selected Text | `#F0F0F0` | Nearly white for highlighted selection with subtle gray tone |
-| Highlight Background | Semi-transparent gray | Translucent overlay that blends with smokey backgrounds |
+| Normal Text | `#FFFFFF` | Pure white for excellent readability on dark backgrounds |
+| Selected Text | `#E0ECF9` | Soft silver with subtle blue tint for highlighted selections |
+| Menu Background | `#1A1A1ACC` | Semi-transparent charcoal gray (80% opacity) |
 | Title Text | `#FFFFFF` | Pure white for title/header text |
-| Progress Bar | `#808080` | Medium gray progress indicator |
-| Progress Background | `#40404080` | Semi-transparent dark gray with opacity |
+| Progress Bar | `#E0ECF9` | Soft silver-blue progress indicator |
+| Progress Background | `#202020` | Dark charcoal background for progress bar |
+| Scrollbar | `#E0ECF9` / `#303030CC` | Soft blue thumb with dark gray track |
 | Background | Smokey skyscraper scene | Atmospheric urban landscape with Victus branding |
 
 ### Icon System
@@ -52,18 +53,18 @@ The theme includes minimal monochrome icons for OS recognition:
 ### Enhanced Typography Details
 
 - **Font Family**: Roboto (professional, highly readable)
-- **Menu Items**: Roboto Regular, 22px
+- **Menu Items**: Roboto Regular, 26px
 - **Titles**: Roboto Bold, 24px
-- **Enhanced Spacing**: 6px between menu items (improved from 4px)
-- **Optimized Icon Space**: 28px reserved for OS icons (enhanced from 24px)
-- **Item Padding**: 12px for better visual breathing room
+- **Enhanced Spacing**: 12px between menu items (optimized spacing)
+- **Optimized Icon Space**: 32px reserved for OS icons (enhanced layout)
+- **Item Padding**: 20px for better visual breathing room
 
 ### Optimized Layout Specifications
 
-- **Menu Position**: 30% from left, 55% from top (centered for perfect balance)
-- **Menu Dimensions**: 40% width, 28% height (sleeker proportions)
-- **Progress Bar**: 30% from left, 86% from top, 40% width (aligned with menu)
-- **Item Height**: 36px with enhanced 12px padding (increased from 32px/8px)
+- **Menu Position**: 5% from left, 45% from top (left-positioned for perfect balance)
+- **Menu Dimensions**: 25% width, 35% height (sleeker proportions)
+- **Progress Bar**: 5% from left, 82% from top, 25% width (aligned with menu)
+- **Item Height**: 44px with enhanced 20px padding (optimized layout)
 - **Enhanced Visual Hierarchy**: Improved spacing and positioning for modern aesthetics
 
 ### Technical Details

@@ -13,12 +13,12 @@ A minimalistic, premium GRUB theme inspired by HP Victus branding featuring ultr
 ## Features
 
 - **Ultra-Sleek Design**: Refined minimalistic interface with dark semi-transparent overlays
-- **Enhanced Readability**: Left-positioned menu (5%/40% position) avoids overlapping Victus branding
+- **Enhanced Readability**: Left-positioned menu (5%/45% position) avoids overlapping Victus branding
 - **Atmospheric Background**: Smokey skyscraper scene with Victus branding optimized for menu placement
 - **High Contrast Colors**: White text (#FFFFFF) on dark overlays for maximum readability
 - **Premium Typography**: Roboto font family with enhanced contrast for superior visibility
 - **Extended OS Support**: Icons for Linux, Windows, Recovery, Arch Linux, and Endeavour OS
-- **Smart Layout**: Menu repositioned with 35% width and dark overlays (#202020C0) for excellent contrast
+- **Smart Layout**: Menu repositioned with 25% width and dark overlays (#1A1A1ACC) for excellent contrast
 - **Enhanced Accessibility**: High contrast white text and reduced transparency for optimal readability
 - **Comprehensive Testing**: Built-in validation script ensures theme integrity
 
@@ -108,9 +108,9 @@ The theme is ready for installation!
 ```
 themes/victus/
 ├── theme.txt              # Main theme configuration
-├── background.png         # Misty forest background (1920x1080)
+├── background.png         # Atmospheric smokey skyscraper background (3840x2160)
 ├── fonts/                 # Font files
-│   ├── Roboto-Regular-22.pf2  # Menu items font
+│   ├── Roboto-Regular-26.pf2  # Menu items font
 │   └── Roboto-Bold-24.pf2     # Title font
 ├── icons/                 # OS type icons
 │   ├── linux.png         # Linux/Unix systems
@@ -132,8 +132,8 @@ sudo apt install grub2-common fonts-roboto
 
 ### Conversion Commands
 ```bash
-# For menu items (22px)
-grub-mkfont -o themes/victus/fonts/Roboto-Regular-22.pf2 -s 22 /usr/share/fonts/truetype/roboto/unhinted/RobotoTTF/Roboto-Regular.ttf
+# For menu items (26px)
+grub-mkfont -o themes/victus/fonts/Roboto-Regular-26.pf2 -s 26 /usr/share/fonts/truetype/roboto/unhinted/RobotoTTF/Roboto-Regular.ttf
 
 # For titles (24px)
 grub-mkfont -o themes/victus/fonts/Roboto-Bold-24.pf2 -s 24 /usr/share/fonts/truetype/roboto/unhinted/RobotoTTF/Roboto-Bold.ttf
@@ -153,15 +153,17 @@ grub-mkfont -o themes/victus/fonts/YourFont-Size.pf2 -s SIZE /path/to/font.ttf
 
 | Element | Color | Usage |
 |---------|-------|-------|
-| `#3498DB` | Enhanced Blue | Selected item background, progress bar foreground |
-| `#FFFFFF` | Pure White | Selected item text, title |
-| `#E0E0E0` | Light Silver | Normal menu text, enhanced readability |
-| `#2C3E50` | Dark Slate | Progress bar background |
-| `#5D6D7E` | Medium Slate | Border elements, refined contrast |
+| `#E0ECF9` | Soft Silver-Blue | Selected item color, progress bar foreground, scrollbar thumb |
+| `#FFFFFF` | Pure White | Normal menu text, title, progress text |
+| `#1A1A1ACC` | Semi-transparent Charcoal | Menu background with 80% opacity |
+| `#202020` | Dark Charcoal | Progress bar background |
+| `#808080` | Medium Gray | Border elements, progress bar border |
+| `#303030CC` | Semi-transparent Dark Gray | Scrollbar track color |
 | `#000000` | Black | Desktop/fallback background |
+| `#000103` | Near Black | Quote text color |
 
 ### Enhanced Color Philosophy
-The updated color scheme provides superior contrast and readability with a modern, professional appearance. The refined blue (#3498DB) offers better visibility while maintaining the sleek aesthetic.
+The updated color scheme provides superior contrast and readability with a modern, professional appearance. The soft silver-blue (#E0ECF9) offers excellent visibility while maintaining the sleek aesthetic with subtle blue tinting.
 
 ## Customization
 
@@ -173,16 +175,16 @@ Edit `themes/victus/theme.txt` and modify color values:
 
 ### Adjusting Layout
 Modify position and size values in `theme.txt` (current optimized values):
-- **Menu Position**: `left = 5%`, `top = 40%` (left-positioned to avoid Victus branding)
-- **Menu Size**: `width = 35%`, `height = 35%` (optimized proportions)
-- **Progress Bar**: `left = 5%`, `top = 80%`, `width = 35%` (aligned with menu)
-- **Enhanced Spacing**: `item_spacing = 6`, `item_padding = 12` (improved readability)
+- **Menu Position**: `left = 5%`, `top = 45%` (left-positioned to avoid Victus branding)
+- **Menu Size**: `width = 25%`, `height = 35%` (optimized proportions)
+- **Progress Bar**: `left = 5%`, `top = 82%`, `width = 25%` (aligned with menu)
+- **Enhanced Spacing**: `item_spacing = 12`, `item_padding = 20` (improved readability)
 
 ### Background Image
 Replace `themes/victus/background.png` with your image:
 - Recommended resolution: 1920x1080 or higher
 - Format: PNG for best quality
-- Consider menu area positioning at 55% height (updated for sleeker layout)
+- Consider menu area positioning at 45% height (current optimized layout)
 
 ## Troubleshooting
 

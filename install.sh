@@ -39,17 +39,6 @@ mkdir -p "$THEME_DIR"
 echo "Copying theme files..."
 cp -r "themes/$THEME_NAME"/* "$THEME_DIR/"
 
-# Copy quote randomization script
-echo "Installing quote randomization feature..."
-cp randomize-quote.sh "$THEME_DIR/"
-chmod +x "$THEME_DIR/randomize-quote.sh"
-
-# Randomize quote for initial installation
-echo "Selecting random inspirational quote..."
-cd "$THEME_DIR"
-./randomize-quote.sh
-cd - > /dev/null
-
 # Set proper permissions
 chmod -R 644 "$THEME_DIR"
 find "$THEME_DIR" -type d -exec chmod 755 {} \;
@@ -92,13 +81,9 @@ echo "Theme features:"
 echo "- Atmospheric smokey skyscraper background with Victus branding"
 echo "- Compact menu with larger fonts for enhanced readability"
 echo "- Strategic positioning to showcase Victus logo"
-echo "- Random inspirational quotes on each boot"
+echo "- Inspirational quote display on each boot"
 echo "- Dark semi-transparent overlays for optimal contrast"
 echo "- Comprehensive OS icon support (Linux, Windows, Recovery, Arch, EndeavourOS)"
-echo ""
-echo "💡 Additional features:"
-echo "  To change quote manually: sudo $THEME_DIR/randomize-quote.sh && sudo update-grub"
-echo "  Quote randomization happens on theme installation and can be run anytime"
 echo ""
 echo "Configuration backup saved to: $BACKUP_CONFIG"
 echo ""
