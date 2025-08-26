@@ -1,97 +1,75 @@
 # HP Victus GRUB Theme
 # Ultra-sleek, premium design with modern minimalist aesthetics
 
-# Desktop background
 desktop-image: "background.png"
 desktop-color: "#000000"
 
-# Title settings (top of screen) - Refined positioning
 title-text: ""
 title-font: "fonts/Roboto-Bold-24"
 title-color: "#FFFFFF"
 
-# Boot menu settings - Compact menu positioned to avoid Victus branding with rounded corners
+# Boot menu - Sleeker unified design
 + boot_menu {
     left = 5%
-    top = 40%
+    top = 45%
     width = 25%
-    height = 25%
-    
+    height = 35%
+
     item_font = "fonts/Roboto-Regular-26"
     item_color = "#FFFFFF"
-    item_spacing = 10
+    item_spacing = 12
     item_height = 44
-    item_padding = 16
+    item_padding = 20
     item_icon_space = 32
-    
+
     selected_item_font = "fonts/Roboto-Regular-26"
-    selected_item_color = "#FFFFFF"
-    selected_item_pixmap_style = "highlight_*.png"
-    
-    # Menu box appearance with rounded corners for modern look
-    scrollbar = false
-    
-    # Icon mapping for different OS types - Optimized positioning
+    selected_item_color = "#E0ECF9"   # soft silver with subtle blue tint
+    selected_item_pixmap_style = "underline.png"
+
+    # Unified menu appearance
+    bg_color = "#1A1A1ACC"        # soft charcoal grey, 80% opacity
+    scrollbar = true
+    scrollbar_thumb_color = "#E0ECF9" # match blue-tinted silver
+    scrollbar_track_color = "#303030CC"
+
+    # Icon mapping for different OS types
     + icon {
-        left = 4
-        top = 8
+        left = 6
+        top = 10
         width = 24
         height = 24
     }
 }
 
-# Progress bar for timeout - Enhanced contrast and readability
 + progress_bar {
     id = "__timeout__"
     left = 5%
-    top = 80%
+    top = 82%
     width = 25%
     height = 18
-    font = "fonts/Roboto-Regular-26"
+    font = "fonts/Roboto-Regular-22"
     text_color = "#FFFFFF"
-    fg_color = "#C0C0C0"
-    bg_color = "#202020C0"
+    fg_color = "#E0ECF9"
+    bg_color = "#202020"
     border_color = "#808080"
     text = "@TIMEOUT_NOTIFICATION_LONG@"
 }
 
-# Terminal settings
 terminal-font: "fonts/Roboto-Regular-26"
 
-# Inspirational quote on the right side - Stylish design element with larger black text (no background)
 + label {
     left = 70%
-    top = 45%
+    top = 70%
     width = 25%
-    height = 20%
-    text = "Alone at the edge of the universe humming a tune..."
+    height = 25%
+    text = "\"Alone at the edge of the universe\nhumming a tune\nFor merely dreaming we were snow...\""
     font = "fonts/LiberationSerif-Regular-40"
-    color = "#000000"
-    align = "center"
+    color = "#000103"
+    align = "right"
 }
 
-# OS Class icon mapping
-+ icon {
-    class = "linux"
-    image = "icons/linux.png"
-}
-
-+ icon {
-    class = "windows"
-    image = "icons/windows.png"
-}
-
-+ icon {
-    class = "recovery"
-    image = "icons/recovery.png"
-}
-
-+ icon {
-    class = "arch"
-    image = "icons/arch.png"
-}
-
-+ icon {
-    class = "endeavouros"
-    image = "icons/endeavouros.png"
-}
++ icon { class = "linux" image = "icons/linux.png" }
++ icon { class = "windows" image = "icons/windows.png" }
++ icon { class = "recovery" image = "icons/recovery.png" }
++ icon { class = "arch" image = "icons/arch.png" }
++ icon { class = "endeavouros" image = "icons/endeavouros.png" }
