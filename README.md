@@ -8,7 +8,7 @@ A minimalistic, premium GRUB theme inspired by HP Victus branding featuring ultr
 
 ![HP Victus GRUB Theme in Action](grub_theme_preview.png)
 
-*The enhanced HP Victus GRUB theme featuring left-positioned menu layout, atmospheric smokey skyscraper background, dark semi-transparent overlays, and modern blue highlights optimized for maximum readability.*
+*The enhanced HP Victus GRUB theme featuring left-positioned menu layout, atmospheric smokey skyscraper background, dark semi-transparent overlays, and modern blue highlights optimized for maximum readability. The theme shows a typical boot menu with Ubuntu, Windows, and recovery options, demonstrating the clean modern aesthetic with the #2980B9 blue color scheme.*
 
 ## Features
 
@@ -42,25 +42,156 @@ The script will:
 
 ### Manual Installation
 
-1. Copy the theme directory:
+#### Step-by-Step Manual Installation
+
+**Step 1: Download and Extract Theme**
 ```bash
+# Clone the repository
+git clone https://github.com/RedheadedGamer/victus_grub.git
+cd victus_grub
+
+# Or if you downloaded a ZIP file, extract it and navigate to the directory
+```
+
+**Step 2: Copy Theme Files to GRUB Directory**
+```bash
+# Create the themes directory if it doesn't exist
+sudo mkdir -p /boot/grub/themes
+
+# Copy the victus theme directory
 sudo cp -r themes/victus /boot/grub/themes/
+
+# Verify the files were copied correctly
+sudo ls -la /boot/grub/themes/victus/
 ```
 
-2. Edit `/etc/default/grub` and add/modify:
+**Step 3: Backup Current GRUB Configuration**
 ```bash
-GRUB_THEME=/boot/grub/themes/victus/theme.txt
-GRUB_TIMEOUT=10
+# Create a backup of your current GRUB configuration
+sudo cp /etc/default/grub /etc/default/grub.backup.$(date +%Y%m%d_%H%M%S)
 ```
 
-3. Update GRUB configuration:
+**Step 4: Edit GRUB Configuration**
+```bash
+# Open the GRUB configuration file in your preferred editor
+sudo nano /etc/default/grub
+# or
+sudo vim /etc/default/grub
+# or
+sudo gedit /etc/default/grub
+```
+
+Add or modify these lines in `/etc/default/grub`:
+```bash
+# Set the theme path
+GRUB_THEME=/boot/grub/themes/victus/theme.txt
+
+# Set timeout (optional, adjust as needed)
+GRUB_TIMEOUT=10
+
+# Optional: Set resolution for better theme display
+GRUB_GFXMODE=1024x768
+
+# Optional: Ensure graphics terminal is used
+GRUB_TERMINAL_OUTPUT="gfxterm"
+```
+
+**Step 5: Verify File Permissions**
+```bash
+# Ensure proper permissions for theme files
+sudo chmod -R 644 /boot/grub/themes/victus/
+sudo chmod 755 /boot/grub/themes/victus/
+sudo find /boot/grub/themes/victus/ -type d -exec chmod 755 {} \;
+```
+
+**Step 6: Update GRUB Configuration**
+
+For **Ubuntu/Debian-based systems**:
 ```bash
 sudo update-grub
-# or on some systems:
+```
+
+For **Fedora/RHEL/CentOS systems**:
+```bash
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+# For UEFI systems, you might need:
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
+```
+
+For **Arch Linux**:
+```bash
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-4. Reboot to see the new theme
+For **openSUSE**:
+```bash
+sudo grub2-mkconfig -o /boot/grub2/grub.cfg
+```
+
+**Step 7: Verify Installation**
+```bash
+# Check if the theme path is correctly set
+grep GRUB_THEME /etc/default/grub
+
+# Verify theme files exist
+ls -la /boot/grub/themes/victus/theme.txt
+```
+
+**Step 8: Reboot and Test**
+```bash
+sudo reboot
+```
+
+#### Installation for Different Boot Systems
+
+**For UEFI Systems:**
+- Theme files location may vary: `/boot/efi/EFI/[distro]/themes/victus/`
+- Check your distribution's GRUB documentation for exact paths
+
+**For Legacy BIOS Systems:**
+- Standard location: `/boot/grub/themes/victus/`
+- Configuration file: `/etc/default/grub`
+
+#### Troubleshooting Manual Installation
+
+**Theme Not Showing:**
+1. Check file paths are correct:
+   ```bash
+   sudo ls -la /boot/grub/themes/victus/theme.txt
+   ```
+
+2. Verify GRUB configuration:
+   ```bash
+   grep GRUB_THEME /etc/default/grub
+   ```
+
+3. Check for syntax errors:
+   ```bash
+   sudo grub-script-check /boot/grub/themes/victus/theme.txt
+   ```
+
+**Permission Issues:**
+```bash
+# Fix ownership and permissions
+sudo chown -R root:root /boot/grub/themes/victus/
+sudo chmod -R 644 /boot/grub/themes/victus/
+sudo chmod 755 /boot/grub/themes/victus/
+sudo find /boot/grub/themes/victus/ -type d -exec chmod 755 {} \;
+```
+
+**Font Issues:**
+```bash
+# Verify font files exist and have correct extensions
+ls -la /boot/grub/themes/victus/fonts/*.pf2
+```
+
+**Recovery (Restore Original Configuration):**
+```bash
+# Restore from backup
+sudo cp /etc/default/grub.backup.* /etc/default/grub
+sudo update-grub  # or appropriate command for your distribution
+sudo reboot
+```
 
 ## Theme Validation
 
