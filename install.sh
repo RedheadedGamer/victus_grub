@@ -61,6 +61,38 @@ else
     sed -i 's/^GRUB_TIMEOUT=0$/GRUB_TIMEOUT=10/' "$GRUB_CONFIG"
 fi
 
+# Set GRUB and terminal resolution to 1920x1080
+echo "Setting up resolution configuration..."
+sed -i '/^GRUB_GFXMODE=/d' "$GRUB_CONFIG"
+sed -i '/^GRUB_GFXPAYLOAD_LINUX=/d' "$GRUB_CONFIG"
+sed -i '/^GRUB_TERMINAL=/d' "$GRUB_CONFIG"
+
+echo "GRUB_GFXMODE=1920x1080" >> "$GRUB_CONFIG"
+echo "GRUB_GFXPAYLOAD_LINUX=keep" >> "$GRUB_CONFIG"
+
+# Add shutdown option to GRUB menu
+echo "Adding shutdown option to GRUB menu..."
+sed -i '/^GRUB_DISABLE_OS_PROBER=/d' "$GRUB_CONFIG"
+if ! grep -q "^#GRUB_DISABLE_OS_PROBER=" "$GRUB_CONFIG"; then
+    echo "#GRUB_DISABLE_OS_PROBER=false" >> "$GRUB_CONFIG"
+fi
+
+# Create custom GRUB menu entry for shutdown
+CUSTOM_GRUB_DIR="/etc/grub.d"
+CUSTOM_SCRIPT="$CUSTOM_GRUB_DIR/40_custom_shutdown"
+
+cat > "$CUSTOM_SCRIPT" << 'EOF'
+#!/bin/sh
+exec tail -n +3 $0
+# This file provides a shutdown option in GRUB menu
+
+menuentry 'Shutdown' --class shutdown --class power {
+    halt
+}
+EOF
+
+chmod +x "$CUSTOM_SCRIPT"
+
 echo "Updating GRUB bootloader configuration..."
 if command -v update-grub &> /dev/null; then
     update-grub
@@ -79,11 +111,14 @@ echo "The HP Victus GRUB theme has been installed successfully."
 echo ""
 echo "Theme features:"
 echo "- Atmospheric smokey skyscraper background with Victus branding"
-echo "- Compact menu with larger fonts for enhanced readability"
+echo "- Enhanced menu readability with dark semi-transparent background"
+echo "- Improved progress bar with modern styling and bright accents"
 echo "- Strategic positioning to showcase Victus logo"
 echo "- Inspirational quote display on each boot"
-echo "- Dark semi-transparent overlays for optimal contrast"
+echo "- High contrast design for optimal readability"
 echo "- Comprehensive OS icon support (Linux, Windows, Recovery, Arch, EndeavourOS)"
+echo "- Shutdown option added to GRUB menu"
+echo "- Resolution configured for 1920x1080 displays"
 echo ""
 echo "Configuration backup saved to: $BACKUP_CONFIG"
 echo ""

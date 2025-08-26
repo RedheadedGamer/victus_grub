@@ -34,12 +34,13 @@
 | Element | Color Code | Description |
 |---------|------------|-------------|
 | Normal Text | `#FFFFFF` | Pure white for excellent readability on dark backgrounds |
-| Selected Text | `#E0ECF9` | Soft silver with subtle blue tint for highlighted selections |
-| Menu Background | `#1A1A1ACC` | Semi-transparent charcoal gray (80% opacity) |
+| Selected Text | `#00D4FF` | Bright cyan for highlighted selections with high visibility |
+| Menu Background | `#000000CC` | Semi-transparent black (80% opacity) for maximum contrast |
 | Title Text | `#FFFFFF` | Pure white for title/header text |
-| Progress Bar | `#E0ECF9` | Soft silver-blue progress indicator |
-| Progress Background | `#202020` | Dark charcoal background for progress bar |
-| Scrollbar | `#E0ECF9` / `#303030CC` | Soft blue thumb with dark gray track |
+| Progress Bar | `#00D4FF` | Bright cyan progress indicator for clear visibility |
+| Progress Background | `#000000CC` | Semi-transparent black background for progress bar |
+| Progress Border | `#00D4FF` | Bright cyan border for modern styling |
+| Scrollbar | `#00D4FF` / `#303030CC` | Cyan thumb with dark gray track |
 | Background | Smokey skyscraper scene | Atmospheric urban landscape with Victus branding |
 
 ### Icon System
@@ -49,6 +50,7 @@ The theme includes minimal monochrome icons for OS recognition:
 - **Linux/Unix**: Terminal-style rectangular icon
 - **Windows**: Four-pane window icon
 - **Recovery**: Circle with cross symbol
+- **Shutdown**: Power/halt symbol for system shutdown option
 
 ### Enhanced Typography Details
 
