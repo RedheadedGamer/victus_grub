@@ -1,73 +1,14 @@
-# HP Victus GRUB Theme
-# Ultra-sleek, premium design with modern minimalist aesthetics
+# Updated theme.txt
 
-desktop-image: "background.png"
-desktop-color: "#000000"
-
-title-text: ""
-title-font: "fonts/Roboto-Bold-24"
-title-color: "#FFFFFF"
-
-# Boot menu - Sleeker unified design
-+ boot_menu {
-    left: 5%
-    top: 45%
-    width: 25%
-    height: 35%
-
-    item_font: "fonts/Roboto-Regular-26"
-    item_color: "#FFFFFF"
-    item_spacing: 12
-    item_height: 44
-    item_padding: 20
-    item_icon_space: 32
-
-    selected_item_font: "fonts/Roboto-Regular-26"
-    selected_item_color: "#E0ECF9"
-    selected_item_pixmap_style: "underline.png"
-
-    bg_color: "#1A1A1ACC"
-    scrollbar: true
-    scrollbar_thumb_color: "#E0ECF9"
-    scrollbar_track_color: "#303030CC"
-
-    icon: {
-        left: 6
-        top: 10
-        width: 24
-        height: 24
-    }
+# Example of a component block
+component1 = {
+    property1 = value1
+    property2 = value2
 }
 
-+ progress_bar {
-    id: "__timeout__"
-    left: 5%
-    top: 82%
-    width: 25%
-    height: 18
-    font: "fonts/Roboto-Regular-22"
-    text_color: "#FFFFFF"
-    fg_color: "#E0ECF9"
-    bg_color: "#202020"
-    border_color: "#808080"
-    text: "@TIMEOUT_NOTIFICATION_LONG@"
+component2 = {
+    property1 = value1
+    property2 = value2
 }
 
-terminal-font: "fonts/Roboto-Regular-26"
-
-+ label {
-    left: 70%
-    top: 70%
-    width: 25%
-    height: 25%
-    text: "Alone at the edge of the universe\nhumming a tune\nFor merely dreaming we were snow..."
-    font: "fonts/LiberationSerif-Regular-40"
-    color: "#000103"
-    align: "right"
-}
-
-+ icon { class: "linux" image: "icons/linux.png" }
-+ icon { class: "windows" image: "icons/windows.png" }
-+ icon { class: "recovery" image: "icons/recovery.png" }
-+ icon { class: "arch" image: "icons/arch.png" }
-+ icon { class: "endeavouros" image: "icons/endeavouros.png" }
+# Other components and properties as necessary...
