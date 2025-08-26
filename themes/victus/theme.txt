@@ -53,6 +53,7 @@ terminal-font: "fonts/Roboto-Regular-26.pf2"
     top = 70%
     width = 25%
     height = 25%
+    wrap = "true"
     text = "Alone at the edge of the universe\nhumming a tune\nFor merely dreaming we were snow..."
     font = "fonts/LiberationSerif-Regular-40.pf2"
     color = "#000103"
