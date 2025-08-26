@@ -30,13 +30,6 @@ title-color: "#FFFFFF"
     scrollbar = true
     scrollbar_width = 20
     scrollbar_thumb = "scrollbar_thumb.png"
-
-    icon {
-        left = 6
-        top = 10
-        width = 24
-        height = 24
-    }
 }
 
 + progress_bar {
@@ -65,9 +58,3 @@ terminal-font: "fonts/Roboto-Regular-26"
     color = "#000103"
     align = "right"
 }
-
-+ icon { class: "linux" image: "icons/linux.png" }
-+ icon { class: "windows" image: "icons/windows.png" }
-+ icon { class: "recovery" image: "icons/recovery.png" }
-+ icon { class: "arch" image: "icons/arch.png" }
-+ icon { class: "endeavouros" image: "icons/endeavouros.png" }
