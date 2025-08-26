@@ -153,15 +153,17 @@ grub-mkfont -o themes/victus/fonts/YourFont-Size.pf2 -s SIZE /path/to/font.ttf
 
 | Element | Color | Usage |
 |---------|-------|-------|
-| `#3498DB` | Enhanced Blue | Selected item background, progress bar foreground |
-| `#FFFFFF` | Pure White | Selected item text, title |
-| `#E0E0E0` | Light Silver | Normal menu text, enhanced readability |
-| `#2C3E50` | Dark Slate | Progress bar background |
-| `#5D6D7E` | Medium Slate | Border elements, refined contrast |
+| `#E0ECF9` | Soft Silver-Blue | Selected item color, progress bar foreground, scrollbar thumb |
+| `#FFFFFF` | Pure White | Normal menu text, title, progress text |
+| `#1A1A1ACC` | Semi-transparent Charcoal | Menu background with 80% opacity |
+| `#202020` | Dark Charcoal | Progress bar background |
+| `#808080` | Medium Gray | Border elements, progress bar border |
+| `#303030CC` | Semi-transparent Dark Gray | Scrollbar track color |
 | `#000000` | Black | Desktop/fallback background |
+| `#000103` | Near Black | Quote text color |
 
 ### Enhanced Color Philosophy
-The updated color scheme provides superior contrast and readability with a modern, professional appearance. The refined blue (#3498DB) offers better visibility while maintaining the sleek aesthetic.
+The updated color scheme provides superior contrast and readability with a modern, professional appearance. The soft silver-blue (#E0ECF9) offers excellent visibility while maintaining the sleek aesthetic with subtle blue tinting.
 
 ## Customization
 

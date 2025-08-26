@@ -33,12 +33,13 @@
 
 | Element | Color Code | Description |
 |---------|------------|-------------|
-| Normal Text | `#B0B0B0` | Smokey light gray perfectly suited for atmospheric backgrounds |
-| Selected Text | `#F0F0F0` | Nearly white for highlighted selection with subtle gray tone |
-| Highlight Background | Semi-transparent gray | Translucent overlay that blends with smokey backgrounds |
+| Normal Text | `#FFFFFF` | Pure white for excellent readability on dark backgrounds |
+| Selected Text | `#E0ECF9` | Soft silver with subtle blue tint for highlighted selections |
+| Menu Background | `#1A1A1ACC` | Semi-transparent charcoal gray (80% opacity) |
 | Title Text | `#FFFFFF` | Pure white for title/header text |
-| Progress Bar | `#808080` | Medium gray progress indicator |
-| Progress Background | `#40404080` | Semi-transparent dark gray with opacity |
+| Progress Bar | `#E0ECF9` | Soft silver-blue progress indicator |
+| Progress Background | `#202020` | Dark charcoal background for progress bar |
+| Scrollbar | `#E0ECF9` / `#303030CC` | Soft blue thumb with dark gray track |
 | Background | Smokey skyscraper scene | Atmospheric urban landscape with Victus branding |
 
 ### Icon System
