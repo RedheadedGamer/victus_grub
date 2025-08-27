@@ -1,5 +1,8 @@
 # HP Victus GRUB Theme
 
+NONE OF THE FOLLOWING IS ACCURATE AND THIS REPOSITORY IS A MAJOR WIP
+
+
 A minimalistic, premium GRUB theme inspired by HP Victus branding featuring ultra-sleek modern design with optimized layout and enhanced visual hierarchy.
 
 ![HP Victus Theme Background](themes/victus/background.png)
